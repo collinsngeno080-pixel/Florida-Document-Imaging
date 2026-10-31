@@ -1,0 +1,22 @@
+{
+  "redirects": [
+    { "source": "/rethinking-edrm/", "destination": "https://www.floridadocumentimaging.com/law-firms/", "statusCode": 301 },
+    { "source": "/rethinking-edrm", "destination": "https://www.floridadocumentimaging.com/law-firms/", "statusCode": 301 },
+
+    { "source": "/wp-admin/:path*", "destination": "https://www.floridadocumentimaging.com/", "statusCode": 301 },
+    { "source": "/wp-login.php", "destination": "https://www.floridadocumentimaging.com/", "statusCode": 301 },
+    { "source": "/feed/:path*", "destination": "https://www.floridadocumentimaging.com/", "statusCode": 301 },
+    { "source": "/category/:path*", "destination": "https://www.floridadocumentimaging.com/", "statusCode": 301 },
+    { "source": "/tag/:path*", "destination": "https://www.floridadocumentimaging.com/", "statusCode": 301 },
+    { "source": "/author/:path*", "destination": "https://www.floridadocumentimaging.com/", "statusCode": 301 },
+
+    { "source": "/index.html", "destination": "https://www.floridadocumentimaging.com/", "statusCode": 301 },
+    { "source": "/:page(about|businesses|how-it-works|law-firms|moving-merging|our-work|quote).html", "destination": "https://www.floridadocumentimaging.com/:page/", "statusCode": 301 },
+    { "source": "/:page(about|businesses|how-it-works|law-firms|moving-merging|our-work|quote)", "destination": "https://www.floridadocumentimaging.com/:page/", "statusCode": 301 },
+
+    { "source": "/:path*", "has": [{ "type": "host", "value": "floridadocumentimaging.com" }], "destination": "https://www.floridadocumentimaging.com/:path*", "statusCode": 301 }
+  ],
+  "rewrites": [
+    { "source": "/:page(about|businesses|how-it-works|law-firms|moving-merging|our-work|quote)/", "destination": "/:page.html" }
+  ]
+}
